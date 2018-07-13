@@ -284,6 +284,9 @@ input.cta-button:focus {
     padding: 20px;
 }
 
+.logo a {
+    text-decoration: none !important;
+}
 
 .logo h1 {
     color: #dc0451;
@@ -871,8 +874,8 @@ input.cta-button:focus {
     opacity: 1;
 }
 
-.popular-job-types .job-box .para ,
-.job-fair .para 
+.popular-job-types .job-box .para , .job-fair .para,
+.jobs .para,.top-companies .para
 {
     max-width: 1000px;
     margin: 0 auto;
@@ -1139,3 +1142,217 @@ input.cta-button:focus {
 }
 
 /* Ends Employee Zone */
+
+/* Starts Jobs */
+
+.inner-banner {
+    position: relative;
+    padding: 250px 0;
+    background: url("../images/banner.jpeg") center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    text-align: center;
+  }
+
+.inner-banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    -webkit-background-image: linear-gradient(to bottom right, #3aa4e2, #cccccc);
+    -moz-background-image: linear-gradient(to bottom right, #3aa4e2, #cccccc);
+    -ms-background-image: linear-gradient(to bottom right, #3aa4e2, #cccccc);
+    -o-background-image: linear-gradient(to bottom right, #3aa4e2, #cccccc);
+    background-image: linear-gradient(to bottom right, #3aa4e2, #cccccc);
+    opacity: .6;
+}
+
+.inner-banner .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    -moz-transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+    -o-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+}
+
+.inner-banner .content h1 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #fff;
+    margin: 0 0 10px 0px;
+    font-weight: bold;
+}
+
+.inner-banner .content p {
+    font-family: 'Comfortaa', cursive;
+    font-size: 16px;
+    color: #fff;
+    margin: 0 0 30px 0px;
+}
+
+.jobs .jobs-wrapper .box {
+    background: #fff;
+	padding: 25px;
+    margin: 0 0 20px;
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -ms-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -o-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    text-align: center;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.jobs .jobs-wrapper .box .circle {
+    background: #b3eef3;
+    width: 70px;
+    height: 70px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+    text-align: center;
+    margin: 0 auto;
+    line-height: 70px;
+}
+
+.jobs .jobs-wrapper .box h4 {
+    margin: 20px 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.jobs .jobs-wrapper .box a {
+    text-decoration: none !important;
+    border: 1px solid #dcdcdc;
+    color: #999;
+    padding: 6px 12px;
+    border-radius: 50px;
+    font-size: 12px;
+    display: table;
+    margin: 0 auto;
+}
+
+/* Ends Jobs */
+
+/* Starts Top Compsnieds */
+
+.top-companies {
+    background-image: -webkit-linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-image: -moz-linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-image: -ms-linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-image: -o-linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    background-image: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    margin-top: 70px;
+    padding-bottom: 70px;
+}
+
+.top-companies .companies-wrapper .box {
+    background: #fff;
+	padding: 25px;
+    margin: 0 0 20px;
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -ms-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -o-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+}
+
+.top-companies .companies-wrapper .box .info h5 {
+    margin:  0;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.top-companies .companies-wrapper .box .info p {
+    margin:  0;
+    color: #999;
+    font-size: 12px;
+}
+
+.top-companies .companies-wrapper .box .info .label-primary {
+    background: #009aa6;
+    margin-top: 10px;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+.top-recruiters {
+    padding-bottom: 50px;
+}
+
+.top-recruiters .slider .item {
+    background: #fff;
+    text-align: center;
+    border: 1px solid #dcdcdc;
+    padding: 20px;
+    border-radius: 4px;
+    margin: 0 20px;
+}
+
+.top-recruiters .slider .item img {
+    height: 80px;
+    width: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+
+.top-recruiters .slider .item h4 {
+    margin: 15px 0;
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.top-recruiters .slider .item .label-primary {
+    background: #009aa6;
+    display: inline-block;
+    font-size: 12px;
+    font-weight: normal;
+    padding: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* EndsTop Compsnieds */
