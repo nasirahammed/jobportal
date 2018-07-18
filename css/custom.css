@@ -486,12 +486,18 @@ input.cta-button:focus {
     margin-bottom: 0;
 }
 
-.banner-slider .quick-login .form-group .form-control {
+.banner-slider .quick-login .form-group .form-control
+{
     height: 40px;
     padding: 6px 12px;
     color: #fff;
     position: relative;
     border: 1px solid #fff;
+}
+
+
+.employee-zone .form-control {
+    
 }
 
 .banner-slider .quick-login .form-group .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
@@ -510,18 +516,42 @@ input.cta-button:focus {
     color: #fff;
   }
 
-.banner-slider .quick-login .form-group.email-icon .form-control {
-    background: url(../images/email-icon.png);
+.banner-slider .quick-login .form-group.email-icon .form-control,
+.employee-zone .form-group.email-icon .form-control,
+.employer-zone .form-group.email-icon .form-control
+ {
+    background: url("../images/email-icon.png");
     background-repeat: no-repeat;
-    background-position: 5px 10px;
-    padding-left: 40px;
+    background-position: 5px 7px;
+    padding-left: 40px !important;
 }
 
-.banner-slider .quick-login .form-group.password-icon  .form-control{
-    background: url(../images/password-icon.png);
+.banner-slider .quick-login .form-group.password-icon  .form-control,
+.employee-zone .form-group.password-icon  .form-control,
+.employer-zone .form-group.password-icon  .form-control
+{   
+    background: url("../images/password-icon.png");
     background-repeat: no-repeat;
-    background-position: 5px 10px;
-    padding-left: 40px;
+    background-position: 5px 7px;
+    padding-left: 40px !important;
+}
+
+.employee-zone .form-group.email-icon .form-control,
+.employer-zone .form-group.email-icon .form-control
+ {
+     background: url("../images/email-grey-icon.png");
+     background-repeat: no-repeat;
+    background-position: 5px 7px;
+    padding-left: 40px !important;
+}
+
+.employee-zone .form-group.password-icon  .form-control,
+.employer-zone .form-group.password-icon  .form-control
+{   
+    background: url("../images/password-grey-icon.png");
+    background-repeat: no-repeat;
+    background-position: 5px 7px;
+    padding-left: 40px !important;
 }
 
 .banner-slider .quick-login .form-group .cta-button {
@@ -1108,6 +1138,7 @@ input.cta-button:focus {
     -o-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
     box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
     border-radius: 4px;
+    position: relative;
 }
 
 .employee-zone .employee-zone-box .register-box .tile {
@@ -1577,4 +1608,43 @@ input.cta-button:focus {
     width: 100%;
     margin: 0 auto;
 }
+
+.employee-zone .btn-bs-file{
+    position:relative;
+    /* linear-gradient(135deg, #dc0451,#fb0d61,#fb337b,#fc6da0) */
+    background: #dc0451;
+    border-color: #dc0451;
+}
+
+.employee-zone .btn-bs-file:hover,
+.employee-zone .btn-bs-file:focus {
+    background: #fb0d61;
+}
+
+.employee-zone .btn-bs-file input[type="file"]{
+    position: absolute;
+    top: -9999999;
+    filter: alpha(opacity=0);
+    opacity: 0;
+    width:0;
+    height:0;
+    outline: none;
+    cursor: inherit;
+}
+
+.back-link {
+    position: absolute;
+    left: 40px;
+    top: 30px;
+}
+
+.back-link a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+    border: 1px solid #333;
+    padding: 6px 12px;
+    border-radius: 4px;
+}
+
 /* Ends Sign Up  */
