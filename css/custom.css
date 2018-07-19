@@ -792,10 +792,10 @@ input.cta-button:focus {
     overflow: hidden;
     position: relative;
     text-align: center;
-    cursor: default;
+    cursor: pointer;
     background: -webkit-linear-gradient(45deg, #ff89e9 0%, #05abe0 100%);
     background: linear-gradient(45deg, #ff89e9 0%,#05abe0 100%);
-  }
+}
   
  .popular-job-types  .hovereffect .overlay {
     width: 100%;
@@ -823,11 +823,14 @@ input.cta-button:focus {
     text-transform: uppercase;
     color: #fff;
     position: relative;
-    font-size: 17px;
+    font-size: 14px;
     background-color: transparent;
     padding: 15% 0 10px 0;
     text-align: left;
     z-index: 101;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
   }
   
   .popular-job-types .hovereffect .overlay:before {
@@ -1306,7 +1309,7 @@ input.cta-button:focus {
 
 .top-companies .companies-wrapper .box {
     background: #fff;
-	padding: 25px;
+	padding: 0;
     margin: 0 0 20px;
     -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
     -moz-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
@@ -1318,6 +1321,32 @@ input.cta-button:focus {
     -ms-border-radius: 4px;
     -o-border-radius: 4px;
     border-radius: 4px;
+}
+
+.top-companies .companies-wrapper .box .image {
+    border-right: 1px solid #eee;
+    padding: 25px;
+    text-align: center;
+    margin: 0 auto;
+    display: table;
+}
+
+.top-companies .companies-wrapper .box .image img {
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -ms-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -o-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    height: 80px;
+    width: 80px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%;
+}
+.top-companies .companies-wrapper .box .info {
+    padding: 25px;
 }
 
 .top-companies .companies-wrapper .box .info h5 {
@@ -1356,6 +1385,11 @@ input.cta-button:focus {
 }
 
 .top-recruiters .slider .item img {
+    -webkit-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -moz-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -ms-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    -o-box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
+    box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 5px 8px 0 rgba(0,0,0,.14), 0 1px 14px 0 rgba(0,0,0,.12);
     height: 80px;
     width: 80px;
     -webkit-border-radius: 50%;
@@ -1366,11 +1400,16 @@ input.cta-button:focus {
 }
 
 .top-recruiters .slider .item h4 {
-    margin: 15px 0;
+    margin: 15px 0 10px 0;
     color: #333;
     font-size: 14px;
     font-weight: bold;
 }
+
+.top-recruiters .slider .item h6 {
+    margin: 0 0 20px 0;
+}
+
 .top-recruiters .slider .item .label-primary {
     background: #009aa6;
     display: inline-block;
@@ -1592,13 +1631,29 @@ input.cta-button:focus {
 .ui.buttons .button:first-child {
     border-left: none;
     margin-left: 0;
-    border-top-left-radius: .28571429rem;
-    border-bottom-left-radius: .28571429rem
+    -webkit-border-top-left-radius: 50px;
+    -moz-border-top-left-radius: 50px;
+    -ms-border-top-left-radius: 50px;
+    -o-border-top-left-radius: 50px;
+    border-top-left-radius: 50px;
+    -webkit-border-bottom-left-radius: 50px;
+    -moz-border-bottom-left-radius: 50px;
+    -ms-border-bottom-left-radius: 50px;
+    -o-border-bottom-left-radius: 50px;
+    border-bottom-left-radius: 50px;
 }
 
 .ui.buttons .button:last-child {
-    border-top-right-radius: .28571429rem;
-    border-bottom-right-radius: .28571429rem
+    -webkit-border-top-right-radius: 50px;
+    -moz-border-top-right-radius: 50px;
+    -ms-border-top-right-radius: 50px;
+    -o-border-top-right-radius: 50px;
+    border-top-right-radius: 50px;
+    -webkit-border-bottom-right-radius: 50px;
+    -moz-border-bottom-right-radius: 50px;
+    -ms-border-bottom-right-radius: 50px;
+    -o-border-bottom-right-radius: 50px;
+    border-bottom-right-radius: 50px;
 }
 /* Ends Button */
 
@@ -1648,3 +1703,72 @@ input.cta-button:focus {
 }
 
 /* Ends Sign Up  */
+
+select option {
+    background: #009aa6;
+    color: #fff;
+}
+
+/* Starts Jobs  */
+
+.jobs-container .inner-banner .form-group.job-icon .form-control
+{
+   background: url("../images/job-icon.png");
+   background-repeat: no-repeat;
+   background-position: 5px 7px;
+   padding-left: 40px !important;
+}
+
+.jobs-container .inner-banner .form-group.loc-icon .form-control
+{
+   background: url("../images/locationmarker-icon.png");
+   background-repeat: no-repeat;
+   background-position: 5px 7px;
+   padding-left: 40px !important;
+}
+
+.jobs-container .popular-job-types .hovereffect small {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    display: block;
+    border: 1px solid #fff;
+    color: #fff;
+    font-size: 10px;
+    padding: 6px 12px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px;
+    background: #009aa6;
+    z-index: 10000;
+    -webkit-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    -moz-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    -ms-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    -o-box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+    box-shadow: 0 0 10px 0 rgba(0,0,0,0.5);
+}
+
+.jobs-container .popular-job-types .hovereffect {
+    margin-bottom: 30px;
+}
+
+
+.owl-theme .owl-controls .owl-buttons div {
+    background: #dc0451;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Ends Jobs  */
